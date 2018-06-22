@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bit Global</title>
+
+		<!-- meta -->
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+	    <!-- css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/ionicons.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/owl.transitions.css">
+	    <link rel="stylesheet" href="css/animate.css">
+	    <link rel="stylesheet" href="css/custom.css">
+
+	    <!-- js -->
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/owl.carousel.min.js"></script>
+	    <script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.actual.min.js"></script>
+		<style>
+		.stats{
+		margin-top: -11%;
+		}
+		.trade{
+		background-image :url("./img/trade.jpg");
+		background-repeat: no-repeat;
+		  background-size: 100% 100%;
+		  color:white;
+		}
+		.contactus{
+		background-image :url("./img/contactus.jpg");
+		background-repeat: no-repeat;
+		  background-size: 100% 100%;
+		  color:white;
+		}
+		.crypto{
+		background-image :url("./img/crypto.jpg");
+		background-repeat: no-repeat;
+		  background-size: 100% 100%;
+		  color:white;
+		}
+		.aboutImg{
+		background-image :url("./img/aboutus.jpg");
+		background-repeat: no-repeat;
+		  background-size: 100% 100%; 
+		  color:white;
+		}
+		.text-right{
+		text-align: right;
+		}
+		@media (max-width: 40em) {
+.stats {
+display:none;
+}
+}
+.nums {
+  background-color:;
+  box-shadow: 0 3px 10px #111;
+<!--   border-top: 1px solid #393 -->939;
+  display: inline-block;
+  height: 50%;
+  border-radius: 25px;
+ <!--  margin: 0 20px; -->
+  perspective: 1000px;
+  position: relative;
+  width: 100%;
+  
+}
+
+		</style>
+		
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="overlay-1">
+				<section id= "navigation">
+					<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	  					<div class="container-fluid">
+	    					<div class="navbar-header">
+	      						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        		<span class="ion-navicon"></span>
+					      		</button>
+					      		<a class="navbar-brand" href="#">Bit Global</a>
+					    	</div>
+	    					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      					<ul class="nav navbar-nav navbar-right">
+									<li><a href="#starting">Home</a></li>
+		      						<li><a href="#about">About Us</a></li>
+		      						<li><a href="#our_service">Trading</a></li>
+		        					<li><a href="#team">CryptoCurrency </a></li>
+		        					<li><a href="#portfolio">TopLeaders</a></li>
+		        					<li><a href="#contact">Contact us</a></li>
+									<li><a href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+									<li><a href="#" data-toggle="modal" data-target="#RegisterModal">Register</a></li>
+							    </ul>
+	    					</div>	<!-- collapse navbar-collapse -->
+	  					</div>	<!-- container-fluid -->
+					</nav>	<!-- navbar -->
+				</section>	<!-- #navigation -->
+				
+				  <!-- Modal -->
+  <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login Form</h4>
+        </div>
+        <div class="modal-body">
+          <form action="../models/userRegistrationModel.php" method="post">
+				<div class="input-group ">
+					<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+					<input type="email" class="form-control" placeholder="Email"
+						name="email" required="required">
+				</div>
+				<div class="input-group ">
+					<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+					<input type="password" class="form-control" placeholder="Password"
+						name="password" id="password" required="required" onkeyup='passwordComparision();'>
+				</div>
+				<div class="row">
+					<div class="col-xs-8">
+						<div class="checkbox icheck">
+							<label> <input type="checkbox"> Remember Me
+							</label>
+						</div>
+					</div>
+					<!-- /.col -->
+					<div class="col-xs-4">
+						<button type="submit" class="btn btn-primary btn-block btn-flat">Sign
+							In</button>
+					</div>
+					<!-- /.col -->
+				</div>
+			</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+			  <!-- Modal End-->	
+			  
+			  			  <!-- Modal -->
+  <div class="modal fade" id="RegisterModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Registration Form</h4>
+        </div>
+        <div class="modal-body">
+         <form action="../models/userRegistrationModel.php" method="post">
+
+				<div class="input-group ">
+					<span class="input-group-addon"><i class="fa fa-user-secret"></i></span>
+					<input type="text" class="form-control" placeholder="User name"
+						name="user" required="required">
+				</div>
+				<div class="input-group ">
+					<span class="input-group-addon"><i class="fa fa-user"></i></span> <input
+						type="text" class="form-control" placeholder="Full name"
+						name="name" required="required">
+				</div>
+				<div class="input-group ">
+					<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+					<input type="email" class="form-control" placeholder="Email"
+						name="email" required="required">
+				</div>
+				<div class="input-group ">
+					<span class="input-group-addon"><i class="fa fa-phone"></i></span>
+					<input type=text class="form-control" placeholder="Mobile"
+						name="mobile">
+				</div>
+				<!-- <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                <select class="form-control" name="position" required="required">
+                <option>Select Position</option>
+                <option value="left">LEFT</option>
+                <option value="right">RIGHT</option>
+                </select>
+              </div> -->
+              <input type="hidden" name="position" value="<?php echo $position?>"/>
+              <input type="hidden" name="referee" value="<?php echo $position?>"/>
+				<div class="input-group ">
+					<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+					<input type="password" class="form-control" placeholder="Password"
+						name="password" id="password" required="required" onkeyup='passwordComparision();'>
+				</div>
+				<span id='size'></span>
+					<div class="input-group ">
+					<span class="input-group-addon"><i class="fa fa-sign-in"></i></span>
+					<input type="password" class="form-control"
+						placeholder="Retype password" name="rePassword" id="rePassword" required="required" onkeyup='return passwordComparision();'>
+				</div><span id='message'></span><span id='size1'></span>
+				<div class="row">
+					<div class="col-xs-8">
+						<div class="checkbox icheck">
+							<label> <input type="checkbox" id="agreement"> I agree to the <a
+								href="#">terms</a>
+							</label>
+						</div>
+						<span id='terms'></span>
+					</div>
+					<!-- /.col -->
+					<div class="col-xs-4">
+						<button type="submit" class="btn btn-primary btn-block btn-flat" id="registerButton" onclick='return agreementCheck();'>Register</button>
+					</div>
+					<!-- /.col -->
+				</div>
+			</form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+			  <!-- Modal End-->	
+			  
+			  
+
+				
+				<section id="starting">
+					<div class="text-center starting-text">
+						
+						<h2>&nbsp;</h2>
+					</div>
+				<div class="starting-text text-center stats">
+				<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-2">
+				<div class="nums">
+				<h2 style="color:#1a75ff;"><i class="fa fa-gear fa-fw"></i>Transactions</h2>
+				<h3 class="rene1 nums" id="world-population" style="color:#1a75ff;font-family: 'Allerta Stencil';margin:5px 0 0 0">0</h1>
+				</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-2">
+				<div class="nums">
+				<h2 style="color:#1a75ff;"> <i class="fa fa-tasks fa-fw"></i>Countries</h2>
+				<h3 class="rene1 nums" id="lines" style="color:#1a75ff;font-family: 'Allerta Stencil';margin:5px 0 0 0">00</h1>
+				</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-2">
+				<div class="nums">
+				<h2 style="color:#1a75ff;"><i class="fa fa-user fa-fw"></i>Users</h2>
+				<h3 class="rene1 nums" id="fun-level" style="color:#1a75ff;font-family: 'Allerta Stencil';margin:5px 0 0 0;">0</h1>
+				</div>
+				</div>
+				
+				</section>
+				
+				<div id="bottom" class="bottom text-center">
+			        <a href="#about"><i class="ion-ios7-arrow-down"></i></a>
+			    </div>
+			</div><!-- overlay-1 -->
+		</div>	<!-- wrapper -->		
+			
+		<!-- About Us -->
+		<section id="about" class="aboutImg">
+			<div class="container">
+				<div class="row text-right" id="heading">
+					<div class="col-md-5 col-md-offset-7 wow animated zoomInDown" id="heading-text">
+						<h3>About Us</h3>
+	                	<hr class="full col-md-offset-7">
+	                	<br/>
+					</div>
+				</div>	<!-- row -->
+				<div class="row about-us-text">
+					<div class="col-md-6 col-md-offset-7">
+						<p class="text-right">BitGlobal makes the trader of more than 70 encrypted currencies in world brokers (poliniex and others) with strategies and a lot of responsibility, using high technology and advanced tools, monitored and monitored through a chart of a team of traders professional and experienced in this market, and thus have a very high profitability success.
+
+A community founded to revolutionize the market of crypto-traders, inserted in this billionaire market, competitive and few people have access to.
+
+-itGlobal through a team of professionals trader specialists, comes with an opportunity for anyone to produce results in this digital currency market. </p>
+<p>&nbsp;</p>
+					</div>
+				</div>	<!-- row -->
+				</div><!-- row main_content -->
+			</div>	<!-- container -->
+		</section>	<!-- about us -->
+
+	<section id="our_service" class="trade">
+			<div class="container">
+				<div class="row text-center" id="heading">
+					<div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
+						<h3>Team Trading</h3>
+	                	<hr class="full">
+	                	<br/>
+					</div>
+				</div>	<!-- row -->
+				<div class="row about-us-text">
+					<div class="col-md-8 col-md-offset-2">
+						<p class="text-center">Trading consists of buying or selling an underlying amount in a financial market with the intention of obtaining a speculative profit. We buy something with the intent to sell for a higher value or with the intention of buying again later for an even lower price.
+						itGlobal through a team of professionals trader specialists, comes with an opportunity for anyone to produce results in this digital currency market.
+						</p>
+					</div>
+				</div>	<!-- row -->
+				</div><!-- row main_content -->
+			</div>	<!-- container -->
+		</section>	<!-- about us -->
+		
+
+	<section id="team" class="crypto">
+			<div class="container">
+				<div class="row text-center" id="heading">
+					<div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
+						<h3>CryptoCurrency</h3>
+	                	<hr class="full">
+	                	<br/>
+					</div>
+				</div>	<!-- row -->
+				<div class="row about-us-text">
+					<div class="col-md-8 col-md-offset-2">
+						<p class="text-center">Trading consists of buying or selling an underlying amount in a financial market with the intention of obtaining a speculative profit. We buy something with the intent to sell for a higher value or with the intention of buying again later for an even lower price.
+						itGlobal through a team of professionals trader specialists, comes with an opportunity for anyone to produce results in this digital currency market.
+						</p>
+						<br/>
+						<br/>
+						<br/>
+					</div>
+				</div>	<!-- row -->
+				</div><!-- row main_content -->
+			</div>	<!-- container -->
+		</section>	<!-- about us -->
+
+		<!-- Portfolio -->
+<!-- 	    <section id="portfolio">
+	    	<div class="container">
+	    		<div class="row text-center" id="heading">
+	    			<div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
+	        			<h3>Our Works</h3>
+	                	<p>Take a look, Taste our cook</p>
+	                	<hr class= "full">
+	                	<br/>
+	        		</div>
+	    		</div>
+	    		<div class="main_content">
+		    		<div class="row port">
+		    			<div class="col-md-8 col-md-offset-2 text-center button-group" id="filters">
+		    				<button type="button" class="btn btn-default is-checked" data-filter="*">All</button>
+		    				<button type="button" class="btn btn-default" data-filter=".web">Web Design</button>
+		    				<button type="button" class="btn btn-default" data-filter=".game">Game</button>
+		    				<button type="button" class="btn btn-default" data-filter=".app">App</button>
+		    			</div>
+		    		</div>
+		    		<div class="row">
+		    			<div class="isotope" id="port-items">
+		    				<div class="col-md-4 col-sm-6 col-xs-6 element-item web" data-category="web">
+		    					<img class="img-responsive" src="img/web-design-1.jpg" >
+		    				</div>
+		    				<div class="col-md-4 col-sm-6 col-xs-6 element-item game" data-category="game">
+		    					<img class="img-responsive" src="img/game-2.jpg">
+		    				</div>
+		    				<div class="col-md-4 col-sm-6 col-xs-6 element-item app" data-category="app">
+		    					<img class="img-responsive" src="img/app-1.jpg">
+		    				</div>
+		    				<div class="col-md-4 col-sm-6 col-xs-6 element-item web" data-category="web">
+		    					<img class="img-responsive" src="img/web-design-2.jpg">
+		    				</div>
+		    				<div class="col-md-4 col-sm-6 col-xs-6 element-item game" data-category="game">
+		    					<img class="img-responsive" src="img/game-1.jpg">
+		    				</div>
+		    				<div class="col-md-4 col-sm-6 col-xs-6 element-item app" data-category="app">
+		    					<img class="img-responsive" src="img/app-2.jpg">
+		    				</div>
+		    				<div class="col-md-4 col-sm-6 col-xs-6 element-item web" data-category="web">
+		    					<img class="img-responsive" src="img/web-design-3.jpg">
+		    				</div>
+		    				<div class="col-md-4 col-sm-6 col-xs-6 element-item game" data-category="game">
+		    					<img class="img-responsive" src="img/game-3.jpg">
+		    				</div>
+		    				<div class="col-md-4 col-sm-6 col-xs-6 element-item app" data-category="app">
+		    					<img class="img-responsive" src="img/app-3.jpg">
+		    				</div>
+		    			</div>
+		    		</div>
+	    		</div>
+	    	</div>	
+	    </section> -->	
+		
+		<!-- Price-Table -->
+	    <!-- <section id="price_table">
+	    	<div class="container">
+	    		<div class="row text-center" id="heading">
+	    			<div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
+	        			<h3>Price Table</h3>
+	                	<p>So flexible, More comfortable</p>
+	                	<hr class="full">
+	                	<br/>
+	        		</div>
+	    		</div>
+	    		<div class="row main_content">
+	    			<ul class="price-table-chart">
+                        <li>
+		                    <a href="#">
+		                        <strong>Free</strong>
+		                        <span class="price_table-description">1 Website</span> 
+		                        <span class="price_table-description">1 Year Updates</span> 
+		                        <span class="price_table-description">No Email Support</span>
+		                        <big class="price_table-price">$0</big>
+		                        <span class="price_table-button">Buy Now</span>
+		                    </a>
+		                </li>
+		            
+		                <li>
+		                    <a href="#">
+		                        <strong>Business</strong>
+		                        <span class="price_table-description">Unlimited Websites</span> 
+		                        <span class="price_table-description">1 Year Updates</span> 
+		                        <span class="price_table-description">1 Year Email Support</span>
+		                        <big class="price_table-price">$90</big>
+		                        <span class="price_table-button">Buy Now</span>
+		                    </a>
+		                </li>
+		            
+		                <li>
+		                    <a href="#">
+		                        <strong>Premium</strong>
+		                        <span class="price_table-description">Unlimited Websites</span> 
+		                        <span class="price_table-description">Lifetime Updates</span> 
+		                        <span class="price_table-description">Lifetime Email Support</span>
+		                        <big class="price_table-price">$190</big>
+		                        <span class="price_table-button">Buy Now</span>
+		                    </a>
+		                </li>
+		            </ul>
+	    		</div>	
+	    	</div>	
+	    </section>	-->
+
+		<!-- Clients -->
+<!-- 	    <section id= "testimonial">
+	    	<div class= "container">
+	    		<div class= "row text-center" id= "heading">
+	    			<div class= "bg-image col-md-12">
+	    				<div class= "col-md-6 col-md-offset-3 wow animated zoomInDown" id= "heading-text">
+		        			<h3>Testimonials</h3>
+		                	<p>Their satisfication, Our inspiration.</p>
+		                	<hr class= "full">
+		                	<br/>
+		        		</div>
+	    			</div>
+	    		</div>
+	    		<div class= "row main_content">
+	    			<div class= "col-md-6 col-md-offset-3">
+	    				<div id="client-speech" class="owl-carousel owl-theme">
+							<div class="item">
+								<div class= "row">
+									<div class= "col-md-6 col-md-offset-3">
+										<img class= "img-circle img-responsive center-block" src="img/client1.png">
+									</div>	
+									<div class= "col-md-12">
+										<p class= "client-comment text-center">
+											When you form a team, why do you try to form a team? Because teamwork builds trust and trust builds speed.
+										</p>
+									</div>
+								</div>
+								<div class= "row text-center">
+									<p class= "client-name text-center"> ----- Noona Nuengthida Sophon</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class= "row">
+									<div class= "col-md-6 col-md-offset-3">
+										<img class= "img-circle img-responsive center-block" src="img/client2.jpg">
+									</div>
+									<div class= "col-md-12">
+										<p class= "client-comment text-center">
+											I am constantly being asked about individuals.&nbsp;The only way to win is as a team. Football is not about one or two or three star players.
+										</p>
+									</div>
+								</div>
+								<div class= "row text-center">
+									<p class= "client-name">-----Md. Aminul Islam Bhuiyan</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class= "row">
+									<div class= "col-md-6 col-md-offset-3">
+										<img class= "img-circle img-responsive center-block" src="img/client3.png">
+									</div>
+									<div class= "col-md-12">
+										<p class= "client-comment text-center">
+											Individual commitment to a group effort- that is what makes a team work, a company work, a society work, a civilisation work.
+										</p>
+									</div>
+								</div>
+								<div class= "row text-center">
+									<p class= "client-name">-----  Jenifar Pink</p>
+								</div>
+							</div>
+						</div>
+	    			</div>
+	    		</div>
+	    	</div>	
+	    </section> -->	
+
+		<!-- contact -->
+	    <section id= "contact" class="contactus">
+	    	<div class= "container">
+				<div class="row text-center" id= "heading">
+					<div class= "bg-image">
+						<div class= "col-lg-6 col-lg-offset-3 share-text wow animated zoomInDown" id= "heading-text">
+							<h3 class= "text-center">Stay Connected</h3>
+		                	<p>We want to connect people like you.</p>
+		                	<hr class= "full">
+		                	<br/>
+						</div>
+					</div>
+				</div>
+				<div class= "row text-center main_content">
+					<div class= "col-md-6 col-md-offset-3 text-center">
+						<form method="post" action="#">
+							<div class= "form">
+								<div class="input-group margin-bottom-sm">
+	  								<span class="input-group-addon">
+	  									<i class="fa fa-user fa-fw"></i>
+	  								</span>
+								 	<input class="form-control" type="text" placeholder="Name" required>
+								</div>
+								<div class="input-group margin-bottom-sm">
+	  								<span class="input-group-addon">
+	  									<i class="fa fa-envelope-o fa-fw"></i>
+	  								</span>
+								 	<input class="form-control" type="text" placeholder="Email address" required>
+								</div>
+								<div class="input-group margin-bottom-sm">
+	  								<span class="input-group-addon">
+	  									<i class="fa fa-tags fa-fw"></i>
+	  								</span>
+								 	<input class="form-control" type="text" placeholder="Subject">
+								</div>
+							</div>
+							<div class="input-group margin-bottom-sm">
+									<span class="input-group-addon">
+										<i class="fa fa-comment-o fa-fw"></i>
+									</span>
+								<textarea class="form-control" rows="6" type= "text" placeholder="Your Message" required></textarea>
+							</div>
+							<input class="btn btn-primary send" type="submit" value="Send Message">
+						</form>
+					</div>	
+				</div>
+				<div class= "row">
+					<!-- <div class= "col-md-6 col-md-offset-3 text-center">
+						<ul class="socials-icons">
+							<li>
+								<a href="#" data-toggle="tooltip" title="Share in Facebook" class="facebook"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#" data-toggle="tooltip" title="Share in Twitter" class="twitter"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#" data-toggle="tooltip" title="Share in Google +" class="google-plus"><i class="fa fa-google-plus"></i></a>
+							</li>
+							<li>
+								<a href="#" data-toggle="tooltip" title="Share in Instagram" class="instagram"><i class="fa fa-instagram"></i></a>
+							</li>
+							<li>
+								<a href="#" data-toggle="tooltip" title="Share in Pinterest" class="pinterest"><i class="fa fa-pinterest"></i></a>
+							</li>
+							<li>
+								<a href="#" data-toggle="tooltip" title="Connect with Skype" class="skype"><i class="fa fa-skype"></i></a>
+							</li>
+						</ul>
+					</div> -->
+				</div>
+			</div>
+	    </section>	<!-- contacts --> 
+			
+		<!-- footer -->
+		<section id= "footer" class= "main-footer">
+			<div class= "row">
+				<div class= "logo text-center">
+					<h1>BitGlobal</h1>
+				</div>
+			</div>
+			<div class= "row">
+				<div class= "copyright text-center">
+				</div>
+			</div>
+		</section><!-- footer -->
+
+		<!-- js -->
+		<script>
+			$(document).ready(function() {
+  				$("#client-speech").owlCarousel({
+  					autoPlay: 3000,
+      				navigation : false, // Show next and prev buttons
+      				slideSpeed : 700,
+      				paginationSpeed : 1000,
+      				singleItem:true
+  				});
+			});
+		</script>
+		<script>
+ 			new WOW().init();
+		</script>
+		<script>
+			$( function() {
+				  // init Isotope
+			  	var $container = $('.isotope').isotope
+			  	({
+				    itemSelector: '.element-item',
+				    layoutMode: 'fitRows'
+			  	});
+
+
+  				// bind filter button click
+  				$('#filters').on( 'click', 'button', function() 
+  				{
+				    var filterValue = $( this ).attr('data-filter');
+				    // use filterFn if matches value
+				    $container.isotope({ filter: filterValue });
+				 });
+  
+			  // change is-checked class on buttons
+			  	$('.button-group').each( function( i, buttonGroup ) 
+			  	{
+			    	var $buttonGroup = $( buttonGroup );
+			    	$buttonGroup.on( 'click', 'button', function() 
+			    	{
+			      		$buttonGroup.find('.is-checked').removeClass('is-checked');
+			      		$( this ).addClass('is-checked');
+			    	});
+			  	});
+			  
+			});
+		</script>
+		<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+
+<script src="./js/jquery.color.min.js"></script>
+<script src="./js/jquery.animateNumber.min.js"></script>
+<script>var percent_number_step = $.animateNumber.numberStepFactories.append('')
+$('#fun-level').animateNumber(
+  {
+    number: 150,
+    easing: 'easeInQuad',
+
+    numberStep: percent_number_step
+  },
+  15000
+);</script>
+<script>$('#lines').animateNumber({ number: 02 });</script>
+<script>var percent_number_step1 = $.animateNumber.numberStepFactories.append('')
+$('#world-population').animateNumber(
+  {
+    number: 52658,
+    easing: 'easeInQuad',
+
+    numberStep: percent_number_step1
+  },
+  1500
+);
+</script>
+        <script src="js/jquery-ui-1.10.3.min.js"></script>
+        <script src="js/jquery.knob.js"></script>
+        <script src="js/daterangepicker.js"></script>
+        <script src="js/bootstrap3-wysihtml5.all.min.js"></script>
+        <script src="js/dashboard.js"></script>
+       
+	</body>
+</html>
